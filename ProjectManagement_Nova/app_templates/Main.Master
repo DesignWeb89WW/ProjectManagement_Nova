@@ -1,0 +1,27 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Main.master.vb" Inherits="ProjectManagement_Nova.Main" %>
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="<%= ResolveClientUrl("~/app_resources/css/1_base.css") %>" />
+    <script type="text/javascript" src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <asp:ContentPlaceHolder ID="cph_head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form class="app-wrapper" id="form1" runat="server">
+        <div class="app-content">
+            <asp:ContentPlaceHolder ID="cph_content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/app_resources/scripts/jquery.min.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveClientUrl("~/app_resources/scripts/scripts.js") %>"></script>
+    
+    <asp:ContentPlaceHolder ID="cph_footer_scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

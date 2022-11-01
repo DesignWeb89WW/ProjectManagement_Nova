@@ -1,0 +1,155 @@
+﻿body {
+    background-color: #b3d2ef; /*628DB6;*/
+}
+
+.app-content {
+    display: block;
+}
+
+.app-aside {
+    background-color: #fff;
+}
+
+.app-main {
+    position: relative;
+}
+
+.app-main-wrap {
+    padding: 1rem;
+}
+
+.page-title {
+    color: #585bbd;
+}
+
+.nova-card-counter {
+    font-size: 1.18rem;
+    text-align: center;
+}
+
+.nova-card-counter .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.nova-article {
+    background: #fff;
+    border: 1px solid #efefef;
+}
+
+.nova-article-header, .nova-announcement-view {
+    padding: 1rem;
+    position: relative;
+}
+
+.nova-tabs, .nova-tabs-content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.nova-tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nova-tabs:after {
+    content:'';
+    height: 3px;
+    background-color:#ccc ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+.nova-tabs > * {
+    background-color: #fff;
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.nova-tabs.borderless {
+    border-bottom: 0;
+}
+
+.nova-tab-link {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: transparent;
+    color: inherit;
+    display: block;
+    letter-spacing: 1px;
+    padding: .8rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.nova-tab-link.active {
+    /*border-bottom-color: #377dff;
+    color: #377dff;*/
+    background-color: #9cb6e5;
+    border-bottom-color: #377dff;
+    color: #fff;
+    font-weight: 700;
+}
+
+.nova-tab-pane {
+    display: none;
+    padding: 1rem;
+}
+
+.nova-tab-pane.active {
+    display: block;
+}
+
+.nova-project-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.nova-project-header .project-name {
+    font-size: 1rem;
+}
+
+.nova-project-header .project-client {
+    font-size: .8rem;
+    margin: 0;
+}
+
+.nova-project-content {
+    position: relative;
+}
+
+
+.head-margin {
+    margin: -1rem -1rem 1rem;
+}
+
+@media (min-width: 768px) {
+    
+    .app-wrapper, .app-content {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .app-content {
+        display: flex;
+    }
+
+    .app-aside {
+        flex: 0 200px;
+    }
+
+    .app-main {
+        flex: 1;
+        overflow: auto;
+    }
+}

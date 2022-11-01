@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/app_templates/Main.Master" AutoEventWireup="false" CodeBehind="Nested_Menu.master.vb" Inherits="ProjectManagement_Nova.Nested_Menu" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cph_head" runat="server">
+    <link rel="stylesheet" href="<%= ResolveClientUrl("~/app_resources/css/2_app.css") %>" />
+    <asp:ContentPlaceHolder ID="cphnest_headcss" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph_content" runat="server">
+    <aside class="app-aside navbar">
+        <nav>
+            <h1>WMS</h1>
+            <ul>
+                <li>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/dashboard">Dashboard</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/projects">Projects</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink3" runat="server">Activity</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/requests">Requests</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/announcements">Announcements</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/mypage/account">My Account</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/mypage/overview">My Overview</asp:HyperLink>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="app-main" id="content" role="main">
+        <div class="app-main-wrap">
+            <% If Not Page.Title = "" Then %>
+            <h1 class="page-title"><%= Page.Title %></h1>
+            <%  End If %>
+            <asp:ContentPlaceHolder ID="cphnest_main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </main>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cph_footer_scripts" runat="server">
+    <asp:ContentPlaceHolder ID="cphnest_js" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
