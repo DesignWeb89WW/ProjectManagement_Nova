@@ -25,7 +25,7 @@
                     <li class="col">
                         <div class="card card-panel">
                             <div style="font-size: 1.3rem;">20</div>
-                            <div style="font-size: 1.15rem;">Projects</div>
+                            <div style="font-size: 1.15rem;">Requests</div>
                         </div>
                     </li>
                     <%--</ul>
@@ -33,13 +33,13 @@
                     <li class="col">
                         <div class="card card-panel">
                             <div style="font-size: 1.3rem;">20</div>
-                            <div style="font-size: 1.15rem;">Projects</div>
+                            <div style="font-size: 1.15rem;">Requests Completed</div>
                         </div>
                     </li>
                     <li class="col">
                         <div class="card card-panel">
                             <div style="font-size: 1.3rem;">20</div>
-                            <div style="font-size: 1.15rem;">Projects</div>
+                            <div style="font-size: 1.15rem;">Pending</div>
                         </div>
                     </li>
                 </ul>
