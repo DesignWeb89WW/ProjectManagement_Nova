@@ -133,8 +133,103 @@
     margin: -1rem -1rem 1rem;
 }
 
+.nova-progress {
+    background-color: #e9ecef;
+    height: 30px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nova-progress-bar {
+    background-color: #ddd;
+    height: inherit;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    z-index: 0;
+}
+
+.nova-progress-text {
+    position: relative;
+    z-index: 1;
+}
+
+.nova-modal {
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    z-index: -4;
+}
+
+.nova-modal-dialog {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.nova-modal-header,
+.nova-modal-content,
+.nova-modal-footer {
+    display: block;
+    padding: 1rem;
+}
+
+.nova-modal-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.nova-modal-header .title {
+    margin: 0
+}
+
+.nova-modal-footer {
+    border-top: 1px solid #ccc;
+    text-align: right;
+}
+
+/* -------------------------------------------- */
+/* Effects */
+/* -------------------------------------------- */
+
+body.modal-open, body.modal-opening, body.modal-closing {
+    overflow: hidden;
+    position: relative;
+}
+
+.modal-open .nova-modal.show,
+.modal-opening .nova-modal.show,
+.modal-closing .nova-modal.show {
+    z-index: 4;
+}
+
+.modal-open .nova-modal.show,
+.modal-opening .nova-modal.show {
+    opacity: 1;
+}
+
+.nova-modal.show {
+    transition: opacity .7s ease-in-out;
+}
+
+.modal-open .nova-modal-dialog,
+.modal-opening .nova-modal-dialog {
+    transform: translateY(0);
+}
+
+/* -------------------------------------------- */
+/* Effects */
+/* -------------------------------------------- */
+
 @media (min-width: 768px) {
-    
     .app-wrapper, .app-content {
         height: 100%;
         overflow: hidden;

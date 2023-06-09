@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class Ann_Form
 
     '''<summary>
-    '''editor control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents editor As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
     '''TxtAnnc_Title control.
     '''</summary>
     '''<remarks>
@@ -41,15 +32,6 @@ Partial Public Class Ann_Form
     Protected WithEvents descriptionTextBox As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''lttest control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lttest As Global.System.Web.UI.WebControls.Literal
-
-    '''<summary>
     '''BtnCreate control.
     '''</summary>
     '''<remarks>
@@ -57,4 +39,13 @@ Partial Public Class Ann_Form
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BtnCreate As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''lttest control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lttest As Global.System.Web.UI.WebControls.Literal
 End Class

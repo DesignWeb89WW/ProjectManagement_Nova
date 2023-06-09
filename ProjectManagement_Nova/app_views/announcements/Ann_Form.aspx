@@ -3,16 +3,35 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="cphnest_headcss" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphnest_main" runat="server">
-    <div id="editor" runat="server"></div>
-    <asp:TextBox ID="TxtAnnc_Title" runat="server"></asp:TextBox>
-    <asp:TextBox CssClass="ckedit" ID="descriptionTextBox" runat="server" TextMode="MultiLine"></asp:TextBox>
-    <asp:Literal ID="lttest" runat="server"></asp:Literal>
-    <%--<div>
-        <ckeditor:ckeditorcontrol id="CKEditor1" basepath="/ckeditor/" runat="server">
-        </ckeditor:ckeditorcontrol>
-    </div>--%>
+    <section class="nova-article">
+        <header class="pad1">Announcement Form</header>
+        <div class="pad"1>
+            
+            <ul class="list-none">
+                <li class="form-row">
+                    <label class="form-label">Title</label>
+                    <div class="col">
+                        <asp:TextBox ID="TxtAnnc_Title" runat="server"></asp:TextBox>
+                    </div>
+                </li>
+                <li class="form-row">
+                    <label class="form-label">Title</label>
+                    <div class="col">
+                        <asp:TextBox CssClass="ckedit" ID="descriptionTextBox" runat="server" TextMode="MultiLine"></asp:TextBox>
+                    </div>
+                </li>
+                <li class="form-row">
+                    <div class="col offset">
+                        <asp:Button ID="BtnCreate" runat="server" Text="Insert" />
+                    </div>
+                </li>
+            </ul>
+            <asp:Literal ID="lttest" runat="server"></asp:Literal>
+            
+        </div>
+    </section>
 
-    <asp:Button ID="BtnCreate" runat="server" Text="Insert" />
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphnest_js" runat="server">
     <script type="text/javascript">

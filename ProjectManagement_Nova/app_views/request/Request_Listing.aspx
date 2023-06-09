@@ -67,6 +67,7 @@
                     <th>Subject</th>
                     <th>Project</th>
                     <th>Status</th>
+                    <th>Progress</th>
                 </tr>
             </thead>
             <tbody>
@@ -80,6 +81,31 @@
                     </td>
                     <td>SEMSS</td>
                     <td>Maintenance</td>
+                    <td>
+                        <div class="nova-progress">
+                            <div class="nova-progress-bar">
+                            </div>
+                                <span class="nova-progress-text">20%</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>23465</td>
+                    <td>
+                        <span>Normal</span>
+                    </td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink5" NavigateUrl="~/requests/edit/1" runat="server">HyperLink</asp:HyperLink>
+                    </td>
+                    <td>SEMSS</td>
+                    <td>Maintenance</td>
+                    <td>
+                        <div class="nova-progress">
+                            <div class="nova-progress-bar" style="width: 45%">
+                            </div>
+                                <span class="nova-progress-text">45%</span>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>

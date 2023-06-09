@@ -62,6 +62,12 @@
                         <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                     </div>
                 </li>
+                <li class="form-row">
+                    <label class="form-label">Payment</label>
+                    <div class="col">
+                        <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                    </div>
+                </li>
             </ul>
             <hr />
             <ul class="list-none">

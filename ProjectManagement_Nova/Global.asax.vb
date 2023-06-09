@@ -29,6 +29,7 @@ Public Class Global_asax
         routes.MapPageRoute("Announcement", "announcements", "~/app_views/announcements/ann_listing.aspx")
         routes.MapPageRoute("Announcement View", "announcements/view/{0}", "~/app_views/announcements/ann_view.aspx")
         routes.MapPageRoute("Announcement New", "announcements/new", "~/app_views/announcements/ann_form.aspx")
+        routes.MapPageRoute("Announcement Edit", "announcements/edit/{0}", "~/app_views/announcements/ann_form.aspx")
 
 
         routes.MapPageRoute("MyPage - Account", "mypage/account", "~/app_views/mypage/my_account.aspx")

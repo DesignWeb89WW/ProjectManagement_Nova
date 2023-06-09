@@ -32,7 +32,7 @@
 
     $('.js-modal-closeall').click(function (e) {
         e.preventDefault();
-        var tgt = $('.ui-modal');
+        var tgt = $('.js-modal');
 
         $('body').addClass("modal-closing").removeClass('modal-open');
 

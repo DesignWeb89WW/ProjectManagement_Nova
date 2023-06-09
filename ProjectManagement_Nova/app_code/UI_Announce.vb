@@ -44,4 +44,37 @@ Public Class UI_Announce
             conn.Close()
         End Using
     End Sub
+
+    Public Sub Update_Annc(v1_title As String, v2_content As String, v3_idnum As String)
+        Dim conn = Connect()
+        Using conn
+            conn.Open()
+
+            Using cmd As New SqlCommand("WMS_Announcement")
+                cmd.Connection = conn
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("V0_Action", "Update")
+                cmd.Parameters.AddWithValue("V1_Title", v1_title)
+                cmd.Parameters.AddWithValue("V2_Content", v2_content)
+                cmd.Parameters.AddWithValue("V3_IDNUM", v2_content)
+
+                cmd.ExecuteNonQuery()
+            End Using
+            conn.Close()
+        End Using
+    End Sub
+
+
+    Public Function GrabAnncByID(v1_idnum As String) As SqlDataReader
+        Dim conn = Connect()
+        conn.Open()
+
+        Dim cmd = New SqlCommand("WMS_Announcement")
+        cmd.Connection = conn
+        cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.AddWithValue("V0_Action", "SearchByID")
+        cmd.Parameters.AddWithValue("V3_IDNUM", v1_idnum)
+
+        Return cmd.ExecuteReader
+    End Function
 End Class
